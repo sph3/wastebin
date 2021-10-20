@@ -7,7 +7,10 @@ app.use(express.urlencoded({ extended: true }));
 const Document = require('./models/Document');
 
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/wastebin', {});
+mongoose.connect(
+  'mongodb+srv://juanhdb:Juanlealdb@wastebin.y8vml.mongodb.net/wastebin?retryWrites=true&w=majority',
+  {}
+);
 
 app.get('/', (req, res) => {
   const welcomeMessage = `#Welcome to Wastebin!
