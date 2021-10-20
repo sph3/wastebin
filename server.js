@@ -19,7 +19,7 @@ a new file and share with others.`;
   res.render('code', {
     code: welcomeMessage,
     currentPage: 'code',
-    language: 'plaintext',
+    language: 'markdown',
   });
 });
 
