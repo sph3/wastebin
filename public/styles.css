@@ -49,3 +49,9 @@ textarea {
   color: #c9d1d9;
   min-height: calc(100vh - 2rem);
 }
+
+.controls-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
