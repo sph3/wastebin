@@ -15,4 +15,8 @@ a new file and share with others.`;
   });
 });
 
+app.get('/new', (req, res) => {
+  res.render('new');
+});
+
 app.listen(8000);
