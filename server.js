@@ -41,7 +41,7 @@ app.get('/:id', async (req, res) => {
   const id = req.params.id;
   try {
     const document = await Document.findById(id);
-    res.render('code', { code: document.code, currentPage: 'code' });
+    res.render('code', { code: document.code, currentPage: 'code', id });
   } catch (e) {
     res.redirect('/');
   }
