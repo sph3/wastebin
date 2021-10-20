@@ -9,7 +9,9 @@ Paste your code here and use the commands
 in the top right corner to create
 a new file and share with others.`;
 
-  res.render('code', { code: welcomeMessage });
+  res.render('code', {
+    code: welcomeMessage,
+  });
 });
 
 app.listen(8000);
