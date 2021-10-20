@@ -26,7 +26,7 @@
     <div class="wrapper">
       <div class="line-numbers">
         <% for (let i = 1; i < code.split('\n').length; i++) { %>
-        <div><% i %></div>
+        <div><%= i %></div>
         <%}%>
       </div>
       <pre><code id="codeEditor" class="language-markdown"><%= code %></code></pre>
