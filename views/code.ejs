@@ -35,7 +35,9 @@
         <div><%= i %></div>
         <%}%>
       </div>
-      <pre><code id="codeEditor" class="language-markdown"><%= code %></code></pre>
+      <pre><code id="codeEditor" class="
+        <%= locals.language ? `language-${locals.language} : ''` %>
+        "><%= code %></code></pre>
     </div>
   </body>
 </html>
