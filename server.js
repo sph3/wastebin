@@ -7,8 +7,9 @@ app.use(express.urlencoded({ extended: true }));
 const Document = require('./models/Document');
 
 const mongoose = require('mongoose');
+const pass = process.env.MONGO_PASS;
 mongoose.connect(
-  'mongodb+srv://juanhdb:Juanlealdb@wastebin.y8vml.mongodb.net/wastebin?retryWrites=true&w=majority',
+  `mongodb+srv://juanhdb:Juanlealdb@wastebin.y8vml.mongodb.net/wastebin?retryWrites=true&w=majority`,
   {}
 );
 
