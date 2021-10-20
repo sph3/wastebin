@@ -18,8 +18,8 @@
     <title>New file | Wastebin</title>
   </head>
   <body>
-    <%- include('_box.ejs') %>
     <form action="/save" method="post">
+      <%- include('_box.ejs') %>
       <div class="wrapper">
         <div class="line-numbers">&gt;</div>
         <textarea autofocus name="code" id="code"><%= locals.code %></textarea>
