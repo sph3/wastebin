@@ -4,6 +4,8 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
 
+const Document = require('./models/Document');
+
 const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/wastebin', {});
 
@@ -24,8 +26,14 @@ app.get('/new', (req, res) => {
   res.render('new', { currentPage: 'new' });
 });
 
-app.post('/save', (req, res) => {
+app.post('/save', async (req, res) => {
   const code = req.body.code;
+  try {
+    const document = await Document.create({ code });
+    res.redirect(`/${document.id}`);
+  } catch (e) {
+    res.render('new', { code });
+  }
   console.log(code);
 });
 
