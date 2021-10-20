@@ -60,4 +60,5 @@ app.get('/:id', async (req, res) => {
   }
 });
 
-app.listen(8000);
+const port = 3000;
+app.listen(process.env.PORT || port);
