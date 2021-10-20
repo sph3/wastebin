@@ -34,7 +34,16 @@ app.post('/save', async (req, res) => {
   } catch (e) {
     res.render('new', { code });
   }
-  console.log(code);
+});
+
+app.get('/:id', async (req, res) => {
+  const id = req.params.id;
+  try {
+    const document = await Document.findById(id);
+    res.render('code', { code: document.code });
+  } catch (e) {
+    res.redirect('/');
+  }
 });
 
 app.listen(8000);
