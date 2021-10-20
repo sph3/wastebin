@@ -5,12 +5,14 @@ body {
 }
 
 @media screen and (min-width: 320px) {
-  .wrapper {
-    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+  .wrapper,
+  textarea {
+    font-size: 16px;
   }
 }
 @media screen and (min-width: 1000px) {
-  .wrapper {
+  .wrapper,
+  textarea {
     font-size: 18px;
   }
 }
@@ -33,4 +35,17 @@ pre {
 .line-numbers {
   color: #8e9499;
   text-align: end;
+}
+
+textarea {
+  background: transparent;
+  margin: 0;
+  outline: none;
+  border: none;
+  resize: none;
+  width: 100%;
+  padding: 0;
+  margin-left: 1rem;
+  color: #c9d1d9;
+  min-height: calc(100vh - 2rem);
 }
