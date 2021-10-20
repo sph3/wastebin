@@ -1,23 +1,24 @@
-@media screen and (min-width: 320px) {
-  body {
-    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
-  }
-}
-@media screen and (min-width: 1000px) {
-  body {
-    font-size: 18px;
-  }
-}
-
 body {
   background-color: #0d1117;
   margin: 0;
   padding: 0;
 }
 
+@media screen and (min-width: 320px) {
+  .wrapper {
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+  }
+}
+@media screen and (min-width: 1000px) {
+  .wrapper {
+    font-size: 18px;
+  }
+}
+
 .wrapper {
   display: flex;
   padding: 1rem 0.5rem;
+  font-family: monospace;
 }
 
 pre {
@@ -27,4 +28,9 @@ pre {
 #codeEditor {
   padding-top: 0;
   padding-bottom: 0;
+}
+
+.line-numbers {
+  color: #8e9499;
+  text-align: end;
 }
