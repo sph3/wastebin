@@ -12,7 +12,9 @@
     <a href="/new" class="btn" aria-label="New file">
       <i class="fa-solid fa-plus"></i>
     </a>
-    <button class="btn" aria-label="Duplicate file and edit">
+    <button class="btn" aria-label="Duplicate file and edit"
+      <%= locals.id ? '' : 'disabled' %>
+    >
       <i class="fa-solid fa-file-signature"></i>
     </button>
     <button class="btn" aria-label="Plain text">
