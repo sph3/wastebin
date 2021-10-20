@@ -4,6 +4,9 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
 
+const mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/wastebin', {});
+
 app.get('/', (req, res) => {
   const welcomeMessage = `#Welcome to Wastebin!
   
