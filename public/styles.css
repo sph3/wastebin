@@ -56,20 +56,19 @@ textarea {
   position: fixed;
   top: 0;
   right: 0;
-  background-color: #080b0f;
-  padding: 1rem;
   font-family: sans-serif;
 }
 
 .logo-wrapper {
-  padding: 0 0.5rem 1rem 0.5rem;
+  background-color: #080b0f;
+  padding: 1rem 1.5rem 0.5rem;
 }
 
 .logo-wrapper a {
   margin: 0;
   text-decoration: none;
   color: #5a7da6;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-style: italic;
 }
 
@@ -79,4 +78,28 @@ textarea {
 
 .logo-wrapper .waste {
   font-weight: bold;
+}
+
+.buttons-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 0.5rem 0.8rem 0.5rem;
+  background-color: #141a24;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  background-color: #5a7da6;
+  padding: 0.3rem 0.7rem;
+  border-radius: 4px;
+  color: #0b1014;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #99c8ff;
 }
