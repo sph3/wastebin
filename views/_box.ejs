@@ -4,7 +4,9 @@
   </div>
 
   <div class="buttons-wrapper">
-    <button class="btn" type="submit" aria-label="Save file">
+    <button class="btn" type="submit" aria-label="Save file"
+      <%= currentPage === 'new' ? '' : 'disabled'%>
+    >
       <i class="fa-solid fa-floppy-disk"></i>
     </button>
     <a href="/new" class="btn" aria-label="New file">
