@@ -82,25 +82,21 @@ textarea {
 
 .buttons-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 5px;
-
-  padding: 0.5rem 0.8rem 0.5rem;
+  padding: 0.3rem 0.8rem 0.3rem;
   background-color: #141a24;
 }
 
 .btn {
   border: none;
   outline: none;
-  background-color: #5a7da6;
-  padding: 0.3rem 0.7rem;
-  border-radius: 4px;
-  color: #0b1014;
-  font-size: 14px;
+  background: none;
+  color: #5a7da6;
+  font-size: 22px;
   cursor: pointer;
 }
 
 .btn:hover {
-  background-color: #99c8ff;
+  color: #99c8ff;
 }
