@@ -1,0 +1,21 @@
+body {
+  background-color: #0d1117;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 320px) {
+  body {
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+  }
+}
+@media screen and (min-width: 1000px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+.wrapper {
+  display: flex;
+  padding: 1rem 0.5rem;
+}
