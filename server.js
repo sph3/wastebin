@@ -37,6 +37,16 @@ app.post('/save', async (req, res) => {
   }
 });
 
+app.get('/:id/duplicate', async (req, res) => {
+  const id = req.params.id;
+  try {
+    const document = await Document.findById(id);
+    res.render('new', { code: document.code, currentPage: 'new' });
+  } catch (e) {
+    res.redirect(`/${id}`);
+  }
+});
+
 app.get('/:id', async (req, res) => {
   const id = req.params.id;
   try {
