@@ -20,7 +20,7 @@
   </head>
   <body>
     <form action="/save" method="post">
-      <%- include('_box.ejs') %>
+      <%- include('_box.ejs', {currentPage: currentPage}) %>
       <div class="wrapper">
         <div class="line-numbers">&gt;</div>
         <textarea autofocus name="code" id="code"><%= locals.code %></textarea>
