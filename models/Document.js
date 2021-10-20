@@ -7,4 +7,4 @@ const documentSchema = new mongoose.Schema({
   },
 });
 
-module.exports = mongoo.model('Document', documentSchema);
+module.exports = mongoose.model('Document', documentSchema);
