@@ -17,7 +17,9 @@
     >
       <i class="fa-solid fa-file-signature"></i>
     </button>
-    <button class="btn" aria-label="Plain text">
+    <button class="btn" aria-label="Plain text"
+      <%= locals.id ? '' : 'disabled' %>
+    >
       <i class="fa-solid fa-file-lines"></i>
     </button>
   </div>
