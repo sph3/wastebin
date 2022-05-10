@@ -1,4 +1,4 @@
-# A Hastebin clone built with Node.js, Express, EJS and MongoDB.
+## A Hastebin clone built with Node.js, Express, EJS and MongoDB.
 
 ### How to test:
 - clone or download the repository
